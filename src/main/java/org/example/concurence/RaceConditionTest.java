@@ -12,9 +12,9 @@ public class RaceConditionTest {
 
     public void add10k() {
         long idx = 0;
-        while (idx < 10) {
-            set(get()+1);
+        while (idx < 1000) {
+            set(get() + 1);
+            idx++;
         }
-
     }
 }

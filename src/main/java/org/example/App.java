@@ -16,12 +16,12 @@ public class App
         Thread t2 = new Thread(() -> rct.add10k());
 
         t1.start();
-        //t2.start();
+        t2.start();
 
 
         try {
             t1.join();
-            //t2.join();
+            t2.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
